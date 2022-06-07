@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    
+	<link rel="stylesheet" href=
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity=
+    "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+            <!-- fontawesome -->
+            <script src="https://kit.fontawesome.com/9fd2837ec2.js" crossorigin="anonymous"></script>
+             <!-- stylesheet -->
+    <link rel="stylesheet" href="./index.css">
+    <title>ToDo List</title>
+</head>
+<header class="bg-primary text-white p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <font face="Comic sans MS"
+                    size="11" color="white">
+                    <strong><i class="fa fa-free-code-camp" aria-hidden="true"></i> ToDo List</strong>
+                </font>
+                
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                         <label for="projectcode">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>Email
+                        </label>
+                        <br/>
+                        <input type="text"
+                        class="form-control"
+                        name="projectcode" id="projectcode">
+                    </div>
+                   
+                    <div>
+                        <label for="status"><i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            Password</label>
+                        <input type="password"
+                         
+                        class="form-control"
+                        name="status" id="projectdate">
+                    </div>
+                   <br/>
+                   
+
+                    <div class="form_action--button">
+                        <div class="col-lg-5 col-md-5 col-sm-5">
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                    </div>
+                    <br/>
+               <div class="col-lg-5 col-md-5 col-sm-5">
+                        <input type="reset" class="btn btn-danger" value="Reset">
+                    </div>
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Email </th>
+                               
+                                <th>Password</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
